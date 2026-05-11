@@ -1,6 +1,5 @@
 import flet as ft
 
-
 class View(ft.UserControl):
     def __init__(self, page: ft.Page):
         super().__init__()
@@ -13,6 +12,14 @@ class View(ft.UserControl):
         self._controller = None
         # graphical elements
         self._title = None
+        self._txtInCMin = None
+        self._btnAnalizzaAeroporti = None
+        self._ddAeroportoP = None
+        self._btnAeroportiConnessi = None
+        self._ddAeroportoD = None
+        self._txtInTratteMax = None
+        self._btnCercaItinerario = None
+        self.txt_result = None
 
     def load_interface(self):
         # title

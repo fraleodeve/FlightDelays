@@ -1,7 +1,6 @@
 from database.DB_connect import DBConnect
 from model.airport import Airport
 
-
 class DAO():
 
     @staticmethod
