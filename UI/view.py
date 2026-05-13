@@ -19,7 +19,7 @@ class View(ft.UserControl):
         self._ddAeroportoD = None
         self._txtInTratteMax = None
         self._btnCercaItinerario = None
-        self.txt_result = None
+        self._txt_results = None
 
     def load_interface(self):
         # title
@@ -58,8 +58,8 @@ class View(ft.UserControl):
         self._page.controls.append(row3)
 
         # List View where the reply is printed
-        self.txt_result = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=True)
-        self._page.controls.append(self.txt_result)
+        self._txt_results = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=True)
+        self._page.controls.append(self._txt_results)
         self._page.update()
 
     @property
